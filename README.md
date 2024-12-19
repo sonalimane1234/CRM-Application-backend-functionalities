@@ -59,7 +59,7 @@ This CRM system allows admin users to manage:
      ```json
      {
        "email": "sonalimane.technothinksup@gmail.com",
-       "password": "Sonali@12",
+       "password": "Sonali@123",
        "role": "Back End Developer"
      }
      ```
@@ -76,7 +76,7 @@ This CRM system allows admin users to manage:
      ```json
      {
        "email": "sonalimane.technothinksup@gmail.com",
-       "password": "Sonali@12"
+       "password": "Sonali@123"
      }
      ```
    - **Response**: `200 OK`
@@ -103,7 +103,7 @@ This CRM system allows admin users to manage:
      ```
 
 4. **Reset Password**:
-   - **POST**: `http://localhost:8080/crm.technothinksup.in/admin/reset-password?resetToken=fee783dd-cdd4-4b09-b669-ee51c8a96396&newPassword=sonali12@`
+   - **POST**: `http://localhost:8080/crm.technothinksup.in/admin/reset-password?resetToken=fee783dd-cdd4-4b09-b669-ee51c8a96396&newPassword=sonali123@`
    - **Response**: `200 OK`
      ```json
      {
@@ -179,22 +179,4 @@ This CRM system allows admin users to manage:
    - **GET**: `http://localhost:8080/crm.technothinksup.in/admin/activity-logs/1`
    - **Response**: The activity log with the specified ID in JSON format.
 
----
 
-#### **Report Endpoints**
-
-1. **Get Task Summary**:
-   - **GET**: `http://localhost:8080/crm.technothinksup.in/admin/reports/summary`
-   - **Response**:
-     ```json
-     {
-       "Total Tasks": 10,
-       "Completed Tasks": 8,
-       "Pending Tasks": 2
-     }
-     ```
-
----
-
-
---
